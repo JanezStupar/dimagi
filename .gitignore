@@ -1,0 +1,19 @@
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.swo
+*.tgz
+*.log
+*.directory
+
+## Python specific
+*.pyc
+*.pyo
+
+## Configurations and util directories
+.idea/
+/logs/
+
