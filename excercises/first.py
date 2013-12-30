@@ -4,7 +4,8 @@ import math
 
 
 class NumberConverter(object):
-    _words_0 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
+    _words_0 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+                'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
     _words_1 = [None, None, 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
     _words_2 = '%s hundred'
     _words_3 = '%s thousand'
@@ -59,7 +60,6 @@ class NumberConverter(object):
 
             # Two recursive calls for each part
             return "%s %s" % (named_rank % self.num_to_word_worker(first_part), self.num_to_word_worker(second_part))
-
 
 
 if __name__ == '__main__':
