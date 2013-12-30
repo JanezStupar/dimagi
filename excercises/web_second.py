@@ -73,6 +73,14 @@ class ArithmeticHistoryRequestHandler(web_first.ArithmeticRequestHandler):
         without any parameters all the results are returned
 
     /history/ returns a list of json objects containing following fields: ['ip', 'timestamp', 'values', 'sum', 'product']
+
+    Examples:
+        POST /history/
+        DATA: 'timestamp="2013-12-23T13:37:01"'
+        > [{..},{..}]
+
+        GET /history/
+        > [{..},...]
     """
 
     def __init__(self, request, client_address, server, storage_backend_cls=MemoryStorage):
