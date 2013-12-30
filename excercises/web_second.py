@@ -69,8 +69,8 @@ class ArithmeticHistoryRequestHandler(web_first.ArithmeticRequestHandler):
 
     /history/ takes parameters:
         'last=n' - which returns last n elements.
-        'timestamp="<ISO8601timestamp>"'  - returns elements newer than the specified timestamp
-        without parameters all the results are returned
+        'timestamp="<ISO8601_timestamp>"'  - returns elements newer than the specified timestamp
+        without any parameters all the results are returned
 
     /history/ returns a list of json objects containing following fields: ['ip', 'timestamp', 'values', 'sum', 'product']
     """
