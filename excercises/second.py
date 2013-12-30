@@ -25,6 +25,5 @@ if __name__ == "__main__":
     print foo
     foo = goofy_cipher(foo)
     print foo
-    print goofy_cipher("Hello world!")
 
 
